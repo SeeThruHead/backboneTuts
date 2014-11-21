@@ -1,0 +1,16 @@
+{
+  "name": "backboneTuts",
+  "version": "1.0.0",
+  "description": "Learning Backbone JS with Javascriptissexy.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "nib": "^1.0.4",
+    "require-dir": "^0.1.0"
+  }
+}
