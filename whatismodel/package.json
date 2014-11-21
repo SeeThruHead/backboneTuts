@@ -9,7 +9,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "glob": "^4.2.1",
     "gulp": "^3.8.10",
+    "gulp-cached": "^1.0.1",
+    "gulp-combine-media-queries": "^0.2.0",
+    "gulp-csso": "^0.2.9",
+    "gulp-uncss": "^0.5.1",
     "nib": "^1.0.4",
     "require-dir": "^0.1.0"
   }
