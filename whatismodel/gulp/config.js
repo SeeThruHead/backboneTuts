@@ -6,6 +6,7 @@ module.exports = {
     src: src + '/stylus/*.styl',
     dest: dest,
     nib: true,
-    compress: true
+    compress: false,
+    csso: true
   }
 };

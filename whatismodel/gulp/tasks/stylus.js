@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
   stylus = require('gulp-stylus'),
   nib = require('nib'),
+  gulpif = require('gulp-if'),
   csso = require('gulp-csso'),
   cmq = require('gulp-combine-media-queries'),
   cache = require('gulp-cached'),
@@ -14,10 +15,11 @@ if (config.nib) {
 }
 
 gulp.task('stylus', function () {
+  console.log(JSON.stringify(options));
   return gulp.src(config.src)
     .pipe(cache('stylus'))
-    .pipe(stylus(options))
+    .pipe(stylus({compress: false}))
     .on('error', handleErrors)
-    .pipe(csso())
+    .pipe(gulpif(config.csso, csso()))
     .pipe(gulp.dest(config.dest));
 });
